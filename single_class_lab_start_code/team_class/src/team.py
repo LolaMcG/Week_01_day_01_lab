@@ -14,12 +14,15 @@ class Team:
         for player in self.players:
             if player == new_player:
                 return True
-        else:
+        else:#you can delete this 'else'! You can just have 'return False', in line with the 'for' loop.
             return False
+    # an alternative way of doing the above, lines 13 - 18
+    # def has_player(self, player):
+        # return self.players.count(player) > 0 .  OR return new_player in self.players
 
     def team_has_points(self, team_points):
         self.points(team_points)
         
     def play_game(self, result):
-        if result == True:
+        if result == True:  #you don't need the '== True' bit. You can just say 'if result:' because you are ALREADY passing in a boolean value.
             self.points += 3

@@ -5,6 +5,7 @@ class Student:
 
     def talk(self):
         return "I can talk!"
+
     
     def say_favourite_language(self, input_language):
         return "I love " + input_language
